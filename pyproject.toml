@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "darkphoenixAES"
+version = "1.0.0"
+authors = [
+    {name = "Nicolas Surbayrole"},
+    {name = "Philippe Teuwen"},
+]
+description = "DarkPhoenix is a tool to perform differential fault analysis attacks (DFA) against AES whiteboxes with external encodings"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "apache2" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+  "tqdm",
+]
+urls = { Source = "https://github.com/SideChannelMarvels/DarkPhoenix" }
+
+[tool.setuptools]
+packages = ["darkphoenixAES", "darkphoenixAES.test"]
